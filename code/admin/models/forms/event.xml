@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="title"
+				type="text"
+				label="Event Name"
+				size="40"
+				class="inputbox required"
+				required="true"
+				validation="required"
+				default=""
+				/>
+		<field
+				name="alias"
+				type="text"
+				label="URL slug"
+				size="40"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="description"
+				type="textarea"
+				label="Event Information"
+				class="inputbox required"
+				required="true"
+				validation="required"
+				default=""
+				/>
+		<field
+				name="created_by"
+				type="user"
+				label="Creator"
+				size="40"
+				class="inputbox"
+				required="true"
+				default=""
+				/>
+		<field
+				name="created_date"
+				type="calendar"
+				label="Created Date"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="event_start"
+				type="calendar"
+				label="Event Starts"
+				class="inputbox"
+				required="true"
+				default=""
+				/>
+		<field
+				name="event_end"
+				type="calendar"
+				label="Event Ends"
+				class="inputbox"
+				required="true"
+				default=""
+				/>
+		<field
+				name="booking_start_date"
+				type="calendar"
+				label="Booking Starts"
+				class="inputbox"
+				default=""
+				/>
+		<field
+				name="booking_end_date"
+				type="calendar"
+				label="Booking Ends"
+				class="inputbox"
+				default=""
+				/>
+		<field name="state" type="radio" default="0" label="Select an option" description="" class="btn-group btn-group-yesno">
+		  <option value="1">JYES</option>
+		  <option value="0">JNO</option>
+		</field>
+	</fieldset>
+</form>
